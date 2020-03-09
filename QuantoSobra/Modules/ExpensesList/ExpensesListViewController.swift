@@ -11,6 +11,8 @@ import UIKit
 class ExpensesListViewController: UIViewController {
     
     override func loadView() {
-        self.view = ExpensesListView()
+        let expensesListView = ExpensesListView()
+        // TODO: expensesListView.viewModel = ExpensesListViewModel(with: expenseList)
+        view = expensesListView
     }
 }

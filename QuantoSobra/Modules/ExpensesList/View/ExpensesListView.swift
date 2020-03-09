@@ -10,8 +10,18 @@ import UIKit
 
 final class ExpensesListView: UIView {
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    private let tableView: UITableView
+    private var tableViewManager: ExpensesListTableManager!
+    var viewModel: ExpensesListViewModel! {
+        didSet {
+            tableViewManager.viewModel = self.viewModel
+            tableView.reloadData()
+        }
+    }
+    
+    init() {
+        tableView = UITableView()
+        super.init(frame: .zero)
         setupView()
     }
     
@@ -22,14 +32,21 @@ final class ExpensesListView: UIView {
 
 extension ExpensesListView: ViewCondingProtocol {
     func buildHierachy() {
-        
+        addViews(tableView)
     }
     
     func buildContraints() {
-        
+        tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor).isActive = true
+        tableView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     }
     
     func buildAdditionalConfiguration() {
-        backgroundColor = .blue
+        tableView.register(ExpensesListTableViewCell.self, forCellReuseIdentifier: ExpensesListTableViewCell.cellReuseIdentifier)
+        
+        tableViewManager = ExpensesListTableManager()
+        tableView.dataSource = tableViewManager
+        tableView.delegate = tableViewManager
     }
 }
