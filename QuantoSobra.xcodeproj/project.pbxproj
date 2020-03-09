@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		85A30B0624168AFD00E08AA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A30B0524168AFD00E08AA3 /* AppDelegate.swift */; };
-		85A30B0824168AFD00E08AA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A30B0724168AFD00E08AA3 /* SceneDelegate.swift */; };
-		85A30B0A24168AFD00E08AA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A30B0924168AFD00E08AA3 /* ViewController.swift */; };
-		85A30B0D24168AFD00E08AA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A30B0B24168AFD00E08AA3 /* Main.storyboard */; };
 		85A30B0F24168AFE00E08AA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A30B0E24168AFE00E08AA3 /* Assets.xcassets */; };
 		85A30B1224168AFE00E08AA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A30B1024168AFE00E08AA3 /* LaunchScreen.storyboard */; };
+		85A30B1B24168EE400E08AA3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A30B1A24168EE400E08AA3 /* Coordinator.swift */; };
+		85A30B1E24168F1D00E08AA3 /* ViewCondingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A30B1D24168F1D00E08AA3 /* ViewCondingProtocol.swift */; };
+		85A30B27241691FE00E08AA3 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A30B26241691FE00E08AA3 /* MainCoordinator.swift */; };
+		85A30B292416937600E08AA3 /* ExpensesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A30B282416937600E08AA3 /* ExpensesListViewController.swift */; };
+		85A30B2C2416970B00E08AA3 /* ExpensesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A30B2B2416970B00E08AA3 /* ExpensesListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		85A30B0224168AFD00E08AA3 /* QuantoSobra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantoSobra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A30B0224168AFD00E08AA3 /* Quanto Sobra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quanto Sobra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A30B0524168AFD00E08AA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85A30B0724168AFD00E08AA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85A30B0924168AFD00E08AA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		85A30B0C24168AFD00E08AA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85A30B0E24168AFE00E08AA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85A30B1124168AFE00E08AA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85A30B1324168AFE00E08AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85A30B1A24168EE400E08AA3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		85A30B1D24168F1D00E08AA3 /* ViewCondingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCondingProtocol.swift; sourceTree = "<group>"; };
+		85A30B26241691FE00E08AA3 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		85A30B282416937600E08AA3 /* ExpensesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesListViewController.swift; sourceTree = "<group>"; };
+		85A30B2B2416970B00E08AA3 /* ExpensesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,7 @@
 		85A30B0324168AFD00E08AA3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85A30B0224168AFD00E08AA3 /* QuantoSobra.app */,
+				85A30B0224168AFD00E08AA3 /* Quanto Sobra.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +60,89 @@
 		85A30B0424168AFD00E08AA3 /* QuantoSobra */ = {
 			isa = PBXGroup;
 			children = (
-				85A30B0524168AFD00E08AA3 /* AppDelegate.swift */,
-				85A30B0724168AFD00E08AA3 /* SceneDelegate.swift */,
-				85A30B0924168AFD00E08AA3 /* ViewController.swift */,
-				85A30B0B24168AFD00E08AA3 /* Main.storyboard */,
-				85A30B0E24168AFE00E08AA3 /* Assets.xcassets */,
-				85A30B1024168AFE00E08AA3 /* LaunchScreen.storyboard */,
-				85A30B1324168AFE00E08AA3 /* Info.plist */,
+				85A30B252416917D00E08AA3 /* Model */,
+				85A30B242416913000E08AA3 /* Persistence */,
+				85A30B23241690EA00E08AA3 /* Resources */,
+				85A30B212416904E00E08AA3 /* SupportingFiles */,
+				85A30B1F24168F9E00E08AA3 /* Modules */,
+				85A30B1C24168F0800E08AA3 /* Helper */,
+				85A30B1924168ED900E08AA3 /* Coordinator */,
 			);
 			path = QuantoSobra;
+			sourceTree = "<group>";
+		};
+		85A30B1924168ED900E08AA3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				85A30B1A24168EE400E08AA3 /* Coordinator.swift */,
+				85A30B26241691FE00E08AA3 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		85A30B1C24168F0800E08AA3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				85A30B1D24168F1D00E08AA3 /* ViewCondingProtocol.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		85A30B1F24168F9E00E08AA3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				85A30B2024168FD700E08AA3 /* ExpensesList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		85A30B2024168FD700E08AA3 /* ExpensesList */ = {
+			isa = PBXGroup;
+			children = (
+				85A30B2A2416964100E08AA3 /* View */,
+				85A30B282416937600E08AA3 /* ExpensesListViewController.swift */,
+			);
+			path = ExpensesList;
+			sourceTree = "<group>";
+		};
+		85A30B212416904E00E08AA3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				85A30B0524168AFD00E08AA3 /* AppDelegate.swift */,
+				85A30B1324168AFE00E08AA3 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		85A30B23241690EA00E08AA3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85A30B0E24168AFE00E08AA3 /* Assets.xcassets */,
+				85A30B1024168AFE00E08AA3 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		85A30B242416913000E08AA3 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		85A30B252416917D00E08AA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85A30B2A2416964100E08AA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85A30B2B2416970B00E08AA3 /* ExpensesListView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +162,7 @@
 			);
 			name = QuantoSobra;
 			productName = QuantoSobra;
-			productReference = 85A30B0224168AFD00E08AA3 /* QuantoSobra.app */;
+			productReference = 85A30B0224168AFD00E08AA3 /* Quanto Sobra.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +205,6 @@
 			files = (
 				85A30B1224168AFE00E08AA3 /* LaunchScreen.storyboard in Resources */,
 				85A30B0F24168AFE00E08AA3 /* Assets.xcassets in Resources */,
-				85A30B0D24168AFD00E08AA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +215,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85A30B0A24168AFD00E08AA3 /* ViewController.swift in Sources */,
+				85A30B1B24168EE400E08AA3 /* Coordinator.swift in Sources */,
+				85A30B2C2416970B00E08AA3 /* ExpensesListView.swift in Sources */,
+				85A30B27241691FE00E08AA3 /* MainCoordinator.swift in Sources */,
+				85A30B292416937600E08AA3 /* ExpensesListViewController.swift in Sources */,
 				85A30B0624168AFD00E08AA3 /* AppDelegate.swift in Sources */,
-				85A30B0824168AFD00E08AA3 /* SceneDelegate.swift in Sources */,
+				85A30B1E24168F1D00E08AA3 /* ViewCondingProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		85A30B0B24168AFD00E08AA3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85A30B0C24168AFD00E08AA3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		85A30B1024168AFE00E08AA3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,15 +358,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLQVFUTRFL;
-				INFOPLIST_FILE = QuantoSobra/Info.plist;
+				INFOPLIST_FILE = QuantoSobra/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ranieri.QuantoSobra;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Quanto Sobra";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,15 +376,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLQVFUTRFL;
-				INFOPLIST_FILE = QuantoSobra/Info.plist;
+				INFOPLIST_FILE = QuantoSobra/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ranieri.QuantoSobra;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Quanto Sobra";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
